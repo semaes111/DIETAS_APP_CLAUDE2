@@ -302,8 +302,9 @@ model ShoppingListItem {
   @@map("shopping_list_items")
 }
 
-// Valid values for string fields (SQLite doesn't support enums)
-// Gender: "MALE", "FEMALE", "OTHER"
-// ActivityLevel: "SEDENTARY", "LIGHTLY_ACTIVE", "MODERATELY_ACTIVE", "VERY_ACTIVE", "EXTREMELY_ACTIVE"
-// Goal: "LOSE", "MAINTAIN", "GAIN"
-// MealType: "BREAKFAST", "LUNCH", "DINNER", "SNACK"
+// SQLite Configuration - No enums support
+// Valid values for string fields:
+// - Gender: "MALE", "FEMALE", "OTHER"
+// - ActivityLevel: "SEDENTARY", "LIGHTLY_ACTIVE", "MODERATELY_ACTIVE", "VERY_ACTIVE", "EXTREMELY_ACTIVE"
+// - Goal: "LOSE", "MAINTAIN", "GAIN"
+// - MealType: "BREAKFAST", "LUNCH", "DINNER", "SNACK"
